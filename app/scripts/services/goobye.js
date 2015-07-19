@@ -5,19 +5,16 @@
     .factory('GoodBye', GoodBye);
  
   function GoodBye() {
-    var getMessage = function () {
-      if (! this.funny) {
-        return "GoodBye";
-      }
-      return this.funny;
+    var show = function (str) {
+      return this.singer === str;
     }
-    var setMessage = function (str) {
-      this.funny = str;
+    var setSinger = function (str) {
+      this.singer = str;
     }
     
     return {
-      getMsg : getMessage,
-      setMsg : setMessage
+      isShow : show,
+      setSinger : setSinger
     };
   
   }

@@ -1,22 +1,26 @@
 <div ng-controller='Hello as hel'>
-<div ng-show="!hel.err">
-  <div><strong>{{ hel.msg }}</strong></div>
-  <iframe type="text/html" width="640" height="385" src="http://www.youtube.com/embed/IcrbM1l_BoI" frameborder="0"></iframe>
+<div>
+  <div><label ng-click='hel.song.setSinger("ancii")'>ancii</label></div>
+  <div ng-show='hel.song.isShow("ancii")'><iframe type="text/html" width="640" height="385" src="http://www.youtube.com/embed/IcrbM1l_BoI" frameborder="0"></iframe></div>
 
-  <div><strong>kesha </strong></div>
-  <iframe type="text/html" width="640" height="385" src="http://www.youtube.com/embed/iP6XpLQM2Cs" frameborder="0"></iframe>
-  <iframe type="text/html" width="640" height="385" src="http://www.youtube.com/embed/hHUbLv4ThOo" frameborder="0"></iframe>
+  <div><label ng-click='hel.song.setSinger("kesha")'>kesha </label></div>
+  <div ng-show='hel.song.isShow("kesha")'><iframe type="text/html" width="640" height="385" src="http://www.youtube.com/embed/iP6XpLQM2Cs" frameborder="0"></iframe>
+  <iframe type="text/html" width="640" height="385" src="http://www.youtube.com/embed/hHUbLv4ThOo" frameborder="0"></iframe></div>
 
-  <div><strong>rihanna </strong></div>
-  <iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/yd8jh9QYfEs" frameborder="0"></iframe>
-  <iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/U0CGsw6h60k" frameborder="0"></iframe>
+  <div><label ng-click='hel.song.setSinger("rihanna")'>rihanna </label></div>
+  <div ng-show='hel.song.isShow("rihanna")'><iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/yd8jh9QYfEs" frameborder="0"></iframe>
+  <iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/U0CGsw6h60k" frameborder="0"></iframe></div>
 
-  <div><strong>kelly clarkson </strong></div>
-  <iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/Xn676-fLq7I" frameborder="0"></iframe>
+  <div><label ng-click='hel.song.setSinger("kelly")'>kelly </label></div>
+  <div ng-show='hel.song.isShow("kelly")'><iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/Xn676-fLq7I" frameborder="0"></iframe></div>
   
-  <div><strong>LMFAO </strong></div>
-  <iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/KQ6zr6kCPj8" frameborder="0"></iframe>
+  <div><label ng-click='hel.song.setSinger("LMFAO")'>LMFAO </label></div>
+  <div ng-show='hel.song.isShow("LMFAO")'><iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/KQ6zr6kCPj8" frameborder="0"></iframe></div>
   
+  <div><label ng-click='hel.song.setSinger("Caly")'>Caly </label></div>
+  <div ng-show='hel.song.isShow("Caly")'><iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/fWNaR-rxAic" frameborder="0"></iframe></div>
+  
+  <div><label ng-click='hel.song.setSinger("Ellie Goulding")'>Ellie Goulding</label></div>
+  <div ng-show='hel.song.isShow("Ellie Goulding")'><iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/0NKUpo_xKyQ" frameborder="0"></iframe></div>
 </div>  
-<input type="button" name="hide" value="hide" ng-click="hel.setError()">
 </div>

@@ -1,3 +1,22 @@
 <div ng-controller='Hello as hel'>
-<div><strong>{{ hel.msg }}</strong></div>
+<div ng-show="!hel.err">
+  <div><strong>{{ hel.msg }}</strong></div>
+  <iframe type="text/html" width="640" height="385" src="http://www.youtube.com/embed/IcrbM1l_BoI" frameborder="0"></iframe>
+
+  <div><strong>kesha </strong></div>
+  <iframe type="text/html" width="640" height="385" src="http://www.youtube.com/embed/iP6XpLQM2Cs" frameborder="0"></iframe>
+  <iframe type="text/html" width="640" height="385" src="http://www.youtube.com/embed/hHUbLv4ThOo" frameborder="0"></iframe>
+
+  <div><strong>rihanna </strong></div>
+  <iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/yd8jh9QYfEs" frameborder="0"></iframe>
+  <iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/U0CGsw6h60k" frameborder="0"></iframe>
+
+  <div><strong>kelly clarkson </strong></div>
+  <iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/Xn676-fLq7I" frameborder="0"></iframe>
+  
+  <div><strong>LMFAO </strong></div>
+  <iframe type="text/html" width="640" height="385"  src="http://www.youtube.com/embed/KQ6zr6kCPj8" frameborder="0"></iframe>
+  
+</div>  
+<input type="button" name="hide" value="hide" ng-click="hel.setError()">
 </div>
